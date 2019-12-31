@@ -73,6 +73,10 @@
     .article-wrapper {
       background-color: coral;
 
+      h3 {
+        font-size: 1.5rem;
+      }
+
       .article-content {
         display: grid;
         grid-template-areas:
@@ -97,21 +101,26 @@
         }
       }
 
-      .article_git {
-        grid-area: git;
+      a {
         border: 1px $secondary-color solid;
+        border-radius: 5%;
         margin: 0 auto;
+        font-size: 1.5rem;
       }
+      .article {
+        &_git {
+          grid-area: git;
+        }
 
-      .article_show {
-        grid-area: show;
-        border: 1px $secondary-color solid;
-        margin: 0 auto;
+        &_show {
+          grid-area: show;
+        }
       }
 
       p {
         grid-area: text;
         padding: 0 1rem 1rem 1rem;
+        font-size: 1.2rem;
       }
     }
   }

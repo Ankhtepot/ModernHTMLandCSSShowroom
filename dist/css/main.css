@@ -110,6 +110,8 @@ ul {
     margin: 0.5rem; }
     #section-content .articles .article-wrapper {
       background-color: coral; }
+      #section-content .articles .article-wrapper h3 {
+        font-size: 1.5rem; }
       #section-content .articles .article-wrapper .article-content {
         display: grid;
         grid-template-areas: 'screenshot screenshot' 'git show' 'text text';
@@ -122,14 +124,16 @@ ul {
         transition: transform 1s; }
         #section-content .articles .article-wrapper .article-img:hover {
           transform: scale(1.5); }
+      #section-content .articles .article-wrapper a {
+        border: 1px steelblue solid;
+        border-radius: 5%;
+        margin: 0 auto;
+        font-size: 1.5rem; }
       #section-content .articles .article-wrapper .article_git {
-        grid-area: git;
-        border: 1px steelblue solid;
-        margin: 0 auto; }
+        grid-area: git; }
       #section-content .articles .article-wrapper .article_show {
-        grid-area: show;
-        border: 1px steelblue solid;
-        margin: 0 auto; }
+        grid-area: show; }
       #section-content .articles .article-wrapper p {
         grid-area: text;
-        padding: 0 1rem 1rem 1rem; }
+        padding: 0 1rem 1rem 1rem;
+        font-size: 1.2rem; }
