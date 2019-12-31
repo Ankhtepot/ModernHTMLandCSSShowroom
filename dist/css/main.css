@@ -35,7 +35,8 @@ ul {
   font-size: 1.7rem;
   font-weight: bold;
   transition: color, background-color, border 0.5s, border-radius 1s;
-  border: 2px solid transparent; }
+  border: 2px solid transparent;
+  cursor: pointer; }
   .btn:hover {
     color: #F4C150;
     background-color: #f4f4f4;
@@ -53,16 +54,21 @@ ul {
 .header-l {
   font-weight: bold;
   font-size: 2rem;
-  text-align: center; }
+  text-align: center;
+  margin: 0.5rem;
+  text-transform: uppercase; }
 
 .bottom-line {
   background-color: #F4C150;
   width: 80%;
   height: 2px;
-  text-align: center; }
+  text-align: center;
+  margin: auto;
+  padding-top: 1fr; }
 
 #main-header {
   position: sticky;
+  top: 0;
   background: #F4C150;
   text-align: center; }
   #main-header .container {
@@ -70,9 +76,6 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
-    #main-header .container .header-l {
-      margin: 0.5rem;
-      font-size: 1.5rem; }
   #main-header .link-course {
     background-color: #f4f4f4;
     padding: 0.2rem 0.5rem;
@@ -102,12 +105,15 @@ ul {
     align-items: center;
     width: 300px;
     height: 100px;
-    margin: auto; }
+    margin: auto;
+    padding-top: 1rem; }
   #section-content .articles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.2rem;
     margin: 0.5rem; }
+    #section-content .articles .article-wrapper:last-child {
+      grid-column: 2 / span 2; }
     #section-content .articles .article-wrapper {
       background-color: #fffed1;
       border-radius: 5%;
@@ -139,3 +145,39 @@ ul {
         grid-area: text;
         padding: 0 1rem 1rem 1rem;
         font-size: 1.2rem; }
+
+#section-about p {
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: steelblue;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 2%;
+  border: solid blue 2px; }
+
+#section-about h2 {
+  padding-top: 2rem; }
+
+#section-contact .contact-header {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 2rem;
+  justify-content: center;
+  text-align: center;
+  max-width: 300px; }
+
+#section-contact .contact-items {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1rem; }
+  #section-contact .contact-items .contact-item {
+    background-color: #333333;
+    color: #ffffff; }
+    #section-contact .contact-items .contact-item i {
+      padding-top: 1rem; }
+  #section-contact .contact-items .contact-item:nth-child(2) {
+    background-color: #dddddd;
+    color: #333333; }

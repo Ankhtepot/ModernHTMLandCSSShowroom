@@ -13,7 +13,7 @@
 
     <title>Petr Závodný | Modern HTML & CSS Course Showroom</title>
 </head>
-<body id="home">
+<body id="section-home">
 <!-- Header -->
     <header id="main-header">
      <div class="container">
@@ -24,9 +24,9 @@
          </div>
          <div class="header-links">
              <ul>
-                 <li><a href="#home" class="btn">Home</a></li>
-                 <li><a href="#about" class="btn">About</a></li>
-                 <li><a href="#contact" class="btn">Contact</a></li>
+                 <li><a href="#section-home" class="btn">Home</a></li>
+                 <li><a href="#section-about" class="btn">About</a></li>
+                 <li><a href="#section-contact" class="btn">Contact</a></li>
              </ul>
          </div>
      </div>
@@ -89,8 +89,26 @@
                 <div class="article-content">
                     <img class="article-img" src="img/Presentation.jpg" alt="Presentation">
                     <a href="pages/Presentation/index.html" class="btn btn-s article_git" target="_blank">Show Web</a>
-                    <a href="https://github.com/Ankhtepot/ModernHTMLandCSSShowroom/tree/master/dist/pages/KnowledgeResume" class="btn btn-s article_show" target="_blank">Show Repository</a>
-                    <p class="arcticle-text">Interesting project to practice transitions and transformations plus some more bits of Javascript. Tricks with border and bit more advanced tips for responsiveness.</p>
+                    <a href="https://github.com/Ankhtepot/ModernHTMLandCSSShowroom/tree/master/dist/pages/Presentation" class="btn btn-s article_show" target="_blank">Show Repository</a>
+                    <p class="arcticle-text">This mini project is more than anything else just demonstration of using JS for scrolling and also how to make single page web look like multi-page web.</p>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <h3 class="header-m py-1">GridNews</h3>
+                <div class="article-content">
+                    <img class="article-img" src="img/GridNews.jpg" alt="GridNews">
+                    <a href="https://keen-montalcini-cbd58e.netlify.com/" class="btn btn-s article_git" target="_blank">Show Web</a>
+                    <a href="https://github.com/Ankhtepot/NewsGrid" class="btn btn-s article_show" target="_blank">Show Repository</a>
+                    <p class="arcticle-text">This is rather bigger project with heavy use of CSS Grid to properly learn how CSS Grid works and how to use it in different situations. Also to get the hang of where to use Flex and where to use CSS Grid. Also this was first project where students are taught how to deploy website to Netlify.</p>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <h3 class="header-m py-1">Portfolio</h3>
+                <div class="article-content">
+                    <img class="article-img" src="img/Portfolio.jpg" alt="Portfolio">
+                    <a href="https://flamboyant-ramanujan-814aae.netlify.com/index.html" class="btn btn-s article_git" target="_blank">Show Web</a>
+                    <a href="https://github.com/Ankhtepot/Portfolio" class="btn btn-s article_show" target="_blank">Show Repository</a>
+                    <p class="arcticle-text">Last project in the course, quite extensive one for my level. Most important bit was implementing sass with node-sass compilation and deployment on Netlify. I realized, that after tasting sass, it's difficult to return to pure CSS really :) I liked this project, because it combined all of previous knowledge and has some really nice functions and transitions.</p>
                 </div>
             </div>
         </div> <!-- End of Articles -->
@@ -98,18 +116,51 @@
     </section>
 
 <!-- Section About-->
-    <section id="about">
+    <section id="section-about">
+        <h2 class="header-l">About</h2>
+        <div class="bottom-line"></div>
+        <p class="p-2">This page is showroom of projects made during the course "Modern HTML & CSS from the beginning"
+            by Brad Traversy. Also I took the challenge to apply what I learned during this course and create this simple
+            web page with as many applied tools which I learned in the course as possible. Its my first complete web page ever
+         made and I'm aware its nothing wonderful, but each path starts with the first step :)</p>
 
+        <div class="bottom-line"></div>
     </section>
 
 <!-- Section Contact-->
-    <section id="contact">
-
+    <section id="section-contact">
+        <div class="contact-header">
+            <h2 class="header-l">Contact</h2>
+            <div class="bottom-line"></div>
+        </div>
+        <div class="contact-items py-1">
+            <div class="contact-item">
+                <i class="fas fa-phone fa-4x"></i>
+                <p class="p-1 header-l">+420 775 915 121</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope-open-text fa-4x"></i>
+                <p class="p-1 header-l">PetrklicZavodny@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-home fa-4x"></i>
+                <p class="p-1 header-l">PetrZavodny.com</p>
+            </div>
+        </div>
     </section>
 
 <!-- Footer -->
     <footer id="main-footer">
-
+        <div class="container">
+            <div class="copyright">
+                <p>Petr Závodný &copy; 31.12.2019</p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/Vessago"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/petrzavodny/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                <a href="https://github.com/Ankhtepot"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

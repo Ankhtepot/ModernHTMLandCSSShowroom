@@ -3,6 +3,7 @@
 // Header
 #main-header {
   position: sticky;
+  top: 0;
   background: $main-color;
   text-align: center;
 
@@ -11,11 +12,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    .header-l {
-      margin: 0.5rem;
-      font-size: 1.5rem;
-    }
   }
 
   .link-course {
@@ -62,6 +58,7 @@
     width: 300px;
     height: 100px;
     margin: auto;
+   padding-top: 1rem;
   }
 
   .articles {
@@ -69,6 +66,10 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.2rem;
     margin: 0.5rem;
+
+    .article-wrapper:last-child {
+      grid-column: 2 / span 2;
+    }
 
     .article-wrapper {
       background-color: #fffed1;
@@ -92,8 +93,6 @@
 
       .article-img {
         grid-area: screenshot;
-        //height: 200px;
-        //width: 250px;
         max-height: 200px;
         margin: auto;
         transition: transform 1s;
@@ -109,6 +108,7 @@
         margin: 0 auto;
         font-size: 1.5rem;
       }
+
       .article {
         &_git {
           grid-area: git;
@@ -124,6 +124,58 @@
         padding: 0 1rem 1rem 1rem;
         font-size: 1.2rem;
       }
+    }
+  }
+}
+
+// Section About
+#section-about {
+  p {
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: $secondary-color;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 2%;
+    border: solid blue 2px;
+  }
+
+  h2 {
+    padding-top: 2rem;
+  }
+}
+
+// Section Contact
+#section-contact {
+  .contact-header {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 2rem;
+    justify-content: center;
+    text-align: center;
+    max-width: 300px;
+  }
+
+  .contact-items {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    .contact-item {
+      background-color: #333333;
+      color: #ffffff;
+
+      i {
+        padding-top: 1rem;
+      }
+    }
+
+    .contact-item:nth-child(2) {
+      background-color: #dddddd;
+      color: #333333;
     }
   }
 }
