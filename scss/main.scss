@@ -69,10 +69,50 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.2rem;
     margin: 0.5rem;
+
     .article-wrapper {
-      width: 300px;
-      height: 200px;
       background-color: coral;
+
+      .article-content {
+        display: grid;
+        grid-template-areas:
+        'screenshot screenshot'
+        'git show'
+        'text text';
+        grid-gap: 0.5rem;
+        align-items: center;
+      }
+
+
+      .article-img {
+        grid-area: screenshot;
+        //height: 200px;
+        //width: 250px;
+        max-height: 200px;
+        margin: auto;
+        transition: transform 1s;
+
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+
+      .article_git {
+        grid-area: git;
+        border: 1px $secondary-color solid;
+        margin: 0 auto;
+      }
+
+      .article_show {
+        grid-area: show;
+        border: 1px $secondary-color solid;
+        margin: 0 auto;
+      }
+
+      p {
+        grid-area: text;
+        padding: 0 1rem 1rem 1rem;
+      }
     }
   }
 }

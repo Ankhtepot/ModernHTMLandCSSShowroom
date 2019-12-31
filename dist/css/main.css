@@ -42,6 +42,14 @@ ul {
     border: 2px solid #EA5252;
     border-radius: 20%; }
 
+.btn-s {
+  font-size: 1rem;
+  padding: 0.2rem; }
+
+.btn-dark {
+  background-color: #333333;
+  color: #f4f4f4; }
+
 .header-l {
   font-weight: bold;
   font-size: 2rem;
@@ -101,6 +109,27 @@ ul {
     grid-gap: 0.2rem;
     margin: 0.5rem; }
     #section-content .articles .article-wrapper {
-      width: 300px;
-      height: 200px;
       background-color: coral; }
+      #section-content .articles .article-wrapper .article-content {
+        display: grid;
+        grid-template-areas: 'screenshot screenshot' 'git show' 'text text';
+        grid-gap: 0.5rem;
+        align-items: center; }
+      #section-content .articles .article-wrapper .article-img {
+        grid-area: screenshot;
+        max-height: 200px;
+        margin: auto;
+        transition: transform 1s; }
+        #section-content .articles .article-wrapper .article-img:hover {
+          transform: scale(1.5); }
+      #section-content .articles .article-wrapper .article_git {
+        grid-area: git;
+        border: 1px steelblue solid;
+        margin: 0 auto; }
+      #section-content .articles .article-wrapper .article_show {
+        grid-area: show;
+        border: 1px steelblue solid;
+        margin: 0 auto; }
+      #section-content .articles .article-wrapper p {
+        grid-area: text;
+        padding: 0 1rem 1rem 1rem; }

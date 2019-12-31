@@ -43,6 +43,16 @@ ul {
   }
 }
 
+.btn-s {
+  font-size: 1rem;
+  padding: 0.2rem;
+}
+
+.btn-dark {
+  background-color: #333333;
+  color: $bg-color;
+}
+
 .header-l {
   font-weight: bold;
   font-size: 2rem;
