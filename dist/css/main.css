@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #f4f4f4;
+  font-family: 'Dosis', sans-serif; }
+
+ul {
+  list-style: none; }
+
+.p-1 {
+  padding: 1rem; }
+
+.p-2 {
+  padding: 2rem; }
+
+.p-3 {
+  padding: 3rem; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.btn {
+  text-decoration: none;
+  color: #333333;
+  padding: 0.5rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  transition: color, background-color, border 0.5s, border-radius 1s;
+  border: 2px solid transparent; }
+  .btn:hover {
+    color: #F4C150;
+    background-color: #f4f4f4;
+    border: 2px solid #EA5252;
+    border-radius: 20%; }
+
+.header-l {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center; }
+
+.bottom-line {
+  background-color: #F4C150;
+  width: 80%;
+  height: 2px;
+  text-align: center; }
+
+#main-header {
+  position: sticky;
+  background: #F4C150;
+  text-align: center; }
+  #main-header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    #main-header .container .header-l {
+      margin: 0.5rem;
+      font-size: 1.5rem; }
+  #main-header .link-course {
+    background-color: #f4f4f4;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5%;
+    display: flex; }
+    #main-header .link-course .fas {
+      color: #EA5252;
+      padding-right: 0.5rem;
+      align-self: center; }
+    #main-header .link-course a {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333333;
+      padding-top: 0.2rem;
+      background-color: #f4f4f4; }
+  #main-header .header-links ul {
+    display: flex; }
+    #main-header .header-links ul li {
+      padding: 1rem; }
+
+#section-content {
+  text-align: center; }
+  #section-content .section-content__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    margin: auto; }
+  #section-content .articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.2rem;
+    margin: 0.5rem; }
+    #section-content .articles .article-wrapper {
+      width: 300px;
+      height: 200px;
+      background-color: coral; }
