@@ -6,12 +6,18 @@
   top: 0;
   background: $main-color;
   text-align: center;
+  z-index: 10;
+  width: 100%;
 
   .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    .header-l {
+      padding-left: 2rem;
+    }
   }
 
   .link-course {
@@ -130,6 +136,8 @@
 
 // Section About
 #section-about {
+  padding-top: 3rem;
+
   p {
     margin: 1rem;
     font-size: 1.5rem;
@@ -137,8 +145,8 @@
     background-color: $secondary-color;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
-    border-radius: 2%;
-    border: solid blue 2px;
+    border-radius: 1%;
+    border: solid blue 1px;
   }
 
   h2 {
@@ -162,7 +170,8 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    background-color: #dddddd;
 
     .contact-item {
       background-color: #333333;
@@ -179,3 +188,50 @@
     }
   }
 }
+
+// Footer
+#main-footer {
+  background-color: $main-color;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .copyright {
+      p {
+        font-weight: bold;
+        font-size: 2rem;
+        padding-left: 2rem;
+        padding-top: 0.7rem;
+        margin: 1rem auto;
+      }
+    }
+
+    .social {
+      display: flex;
+      margin: 1rem;
+      padding-right: 2rem;
+
+      a {
+        padding: 0.5rem;
+
+        i {
+          color: #333333;
+          padding: 0.5rem;
+          border: 1px solid #333333;
+          border-radius: 50%;
+          transition: all 1s ease-out;
+
+          &:hover {
+            color: $main-color;
+            background-color: #333333;
+            border: 2px solid $main-color;
+            transform: scale(1.5);
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "mobile";

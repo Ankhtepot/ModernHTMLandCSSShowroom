@@ -1,0 +1,71 @@
+// Tablet
+@media(max-width: 1100px) {
+  #section-content {
+    .articles {
+      grid-template-columns: repeat(2, 1fr);
+
+      .article-wrapper:last-child {
+        grid-column: 1;
+      }
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .header-l,
+  .btn {
+    font-size: 1.5rem;
+  }
+
+  #main-header {
+    .container {
+      flex-direction: column;
+    }
+  }
+
+  #section-content {
+    .articles {
+      grid-template-columns: 1fr;
+
+      .article-wrapper {
+        .article-img:hover {
+          transform: scale(1.2);
+        }
+
+        &:last-child {
+        }
+        grid-column: 1;
+      }
+    }
+  }
+
+  #section-about {
+    padding-top: 8rem;
+  }
+
+  #section-contact {
+    padding-top: 8rem;
+
+    .contact-items {
+      flex-direction: column;
+    }
+  }
+
+  #main-footer {
+    .container {
+      .social {
+        margin: 2rem 1rem;
+      }
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  #main-footer {
+    .container {
+      .social {
+        flex-direction: column;
+      }
+    }
+  }
+}
