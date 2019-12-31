@@ -109,7 +109,7 @@ ul {
     grid-gap: 0.2rem;
     margin: 0.5rem; }
     #section-content .articles .article-wrapper {
-      background-color: lightsalmon;
+      background-color: #fffed1;
       border-radius: 5%;
       box-shadow: 3px 3px #333333; }
       #section-content .articles .article-wrapper h3 {
