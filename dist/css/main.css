@@ -221,7 +221,7 @@ ul {
   #section-content .articles {
     grid-template-columns: repeat(2, 1fr); }
     #section-content .articles .article-wrapper:last-child {
-      grid-column: 1; } }
+      grid-column: 1 !important; } }
 
 @media (max-width: 768px) {
   .header-l,
@@ -245,5 +245,15 @@ ul {
     margin: 2rem 1rem; } }
 
 @media (max-width: 500px) {
-  #main-footer .container .social {
-    flex-direction: column; } }
+  #main-footer .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    #main-footer .container .copyright,
+    #main-footer .container .social {
+      padding: 0.5rem;
+      margin: 0; }
+    #main-footer .container .social {
+      padding: 0 0 2rem 0;
+      margin-top: 0; } }
